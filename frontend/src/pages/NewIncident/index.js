@@ -10,7 +10,7 @@ import logoImg from '../../assets/logo.svg';
 export default function NewIncident() {
 
     const [title, setTitle] = useState('');
-    const [descrition, setDescription] = useState('');
+    const [description, setDescription] = useState('');
     const [value, setValue] = useState('');
 
     const ongId = localStorage.getItem('ongId');
@@ -58,7 +58,7 @@ export default function NewIncident() {
                     />
                     <textarea 
                         placeholder="Descrição"
-                        value={descrition}
+                        value={description}
                         onChange={e => setDescription(e.target.value)}
                     />
                   <input 
